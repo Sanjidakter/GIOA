@@ -1,0 +1,282 @@
+body {
+  font-family: sans-serif;
+  justify-content: center;
+  align-items: center;
+}
+/*--------------Navbar----------*/
+.navbar {
+  width: 90%;
+  margin: 20px auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: none;
+}
+
+.navlist li {
+  display: inline-block;
+}
+.navlist a {
+  font-size: 25px;
+  text-decoration: none;
+  color: white;
+}
+
+.navlist img {
+  width: 45px;
+  color: white;
+}
+.navlist img:hover {
+  border: 1px solid wheat;
+  padding: 10px 20px;
+  background-color: green;
+  size: 30px;
+  transition: 0.8s;
+}
+.home {
+  color: white;
+  font-size: 25px;
+  text-decoration: none;
+}
+.home:hover {
+  border: 1px solid wheat;
+  padding: 10px 20px;
+  transition: 0.8s;
+  background: rgba(240, 245, 242, 0.863);
+  color: black;
+}
+
+/*-------------Intro----------*/
+
+.intro {
+  background-image: url(img/bkimg.jpg);
+  height: 100vh;
+}
+.heading {
+  display: flex;
+  height: 70vh;
+}
+h1 {
+  font-size: 15vw;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.8;
+  margin-left: 8%;
+}
+.text-focus-in {
+  color: white;
+  font-size: 2vw;
+  margin-top: 20%;
+  -webkit-animation: text-focus-in 2s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+  animation: text-focus-in 2s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+}
+@-webkit-keyframes text-focus-in {
+  0% {
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
+@keyframes text-focus-in {
+  0% {
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
+.btn {
+  border: 1px solid wheat;
+  background: none;
+  padding: 10px 20px;
+  font-size: 20px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  cursor: pointer;
+  margin: 10px;
+  color: cornsilk;
+  transition: 0.8s;
+  margin-left: 50%;
+}
+.btn:hover {
+  background: rgba(18, 80, 44, 0.993);
+  color: rgb(224, 233, 223);
+}
+
+/*-----------second----------*/
+
+.container1 {
+  height: 100vh;
+  display: flex;
+  background-color: rgb(117, 110, 110);
+}
+
+.box1img {
+  margin-top: 5%;
+  width: 50vw;
+  height: 80vh;
+  background-size: cover;
+  align-items: center;
+}
+
+.box_1 p {
+  color: white;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 65px;
+  font-weight: 500;
+  margin-left: 10%;
+}
+
+p1 {
+  margin-left: 15%;
+  color: rgba(0, 0, 0, 0.692);
+  opacity: 0.8;
+  font-weight: bold;
+}
+
+h4 {
+  margin: 10% 0 0 10%;
+  font-size: 60px;
+  font-family: "Dancing Script", cursive;
+}
+p2 {
+  margin-top: 10%;
+  margin-left: 10%;
+  display: block;
+}
+p3 {
+  margin-top: 40%;
+  margin-left: 10%;
+  font-size: 20px;
+}
+
+/*-------------third----------*/
+.third {
+  display: flex;
+  height: 120vh;
+  background-image: url(img/bag2.jpg);
+  background-size: cover;
+  align-items: center;
+}
+.third p {
+  font-family: "Dancing Script", cursive;
+  font-size: 100px;
+  color: blanchedalmond;
+  margin-left: 80%;
+}
+.third button {
+  margin-left: 90%;
+}
+.third button:hover {
+  background: rgba(1, 14, 6, 0.993);
+  color: rgb(224, 233, 223);
+}
+/*-------------fourth----------*/
+.fourth {
+  height: 150vh;
+  display: flex;
+  background-color: cornsilk;
+}
+.fourth img {
+  margin: 20px 20px;
+  display: flex;
+  background-size: cover;
+  width: 40vw;
+  height: 70vh;
+}
+.fourth h3 {
+  font-family: "Dancing Script", cursive;
+  font-size: 60px;
+  margin-top: 30%;
+}
+.btn3 {
+  border: 2px solid rgb(31, 30, 29);
+  background: none;
+  padding: 5px 10px;
+  font-size: 30px;
+  font-family: "Dancing Script", cursive;
+  margin-left: 0;
+  cursor: pointer;
+  transition: 0.8s;
+  margin-left: 50%;
+  color: black;
+}
+.btn3:hover {
+  background: rgba(1, 14, 6, 0.993);
+  color: rgb(224, 233, 223);
+}
+/*-------------footer----------*/
+.footer {
+  height: 60vh;
+  background-color: black;
+  color: white;
+  display: flex;
+  align-items: center;
+}
+.footer h3 {
+  font-family: "Times New Roman", Times, serif;
+}
+footer ul,
+li {
+  margin-left: 10%;
+}
+
+footer li {
+  color: rgba(255, 255, 255, 0.719);
+  font-size: 15px;
+}
+
+.social {
+  margin-left: 10%;
+}
+.social h3 {
+  font-family: "Times New Roman", Times, serif;
+  margin-top: -40px;
+  margin-left: 30px;
+}
+.social img {
+  width: 25px;
+  margin: 10px 30px;
+}
+.signup {
+  margin-left: 10%;
+}
+.sign {
+  background-color: whitesmoke;
+  font-size: 25px;
+  text-decoration: none;
+}
+.sign:hover {
+  border: 1px solid wheat;
+  padding: 10px 20px;
+  transition: 0.8s;
+  background: rgba(240, 245, 242, 0.863);
+  color: black;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+}

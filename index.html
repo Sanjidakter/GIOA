@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>HOME</title>
+  </head>
+
+  <body>
+    <section class="intro">
+      <nav class="navbar">
+        <a class="home" href="index.html">Home</a>
+        <ul class="navlist">
+          <li>
+            <a href="store.html"
+              ><img src="img/cart.svg" loading = "lazy"
+            /></a>
+          </li>
+        </ul>
+      </nav>
+      <div class="heading">
+        <h1>GIOIA</h1>
+        <p class="text-focus-in">TRUE ECOMMERCE FASHION DONE RIGHT</p>
+      </div>
+      <a href="store.html"
+        ><button class="btn">Purchase</button></a
+      >
+    </section>
+    <!-----second------->
+    <section class="second">
+      <div class="container1">
+        <div class="box_1">
+          <h4>New Now</h4>
+          <p1 id="date"></p1>
+          <p2>
+            Gioia is decked out with stunning layouts ideal for showcasing
+            product collections and individual items<br />
+            <ul>
+              <li>New items every week</li>
+              <li>Get your disered products here</li>
+              <li>Best product on reasonable price</li>
+              <li>Visit our outlets and enjoy special discounts!</li>
+            </ul>
+          </p2>
+          <p3><b>Shop by Look >></b></p3>
+        </div>
+        <script>
+          window.onload = function () {
+            var months = [
+              "January",
+              "February",
+              "March",
+              "April",
+              "May",
+              "June",
+              "July",
+              "August",
+              "September",
+              "October",
+              "November",
+              "December",
+            ];
+            var date = new Date();
+
+            document.getElementById("date").innerHTML =
+              months[date.getMonth()] + "'" + date.getUTCFullYear();
+          };
+        </script>
+
+        <img class="box1img" src="img/bg1.jpg" loading = "lazy"/>
+      </div>
+    </section>
+
+    <!-----third------->
+    <section class="third">
+      <div class="container">
+        <p>Fall Autumn!</p>
+        <a href="store.html">
+          ><button class="btn">Purchase</button></a
+        >
+      </div>
+    </section>
+    <section class="fourth">
+      <div class="class1">
+        <img class="img1" src="img/bag3.jpg" />
+        <img class="img2" src="img/shoe1.jpg" />
+      </div>
+      <div class="class2">
+        <img class="img3" src="img/bag4.jpg" />
+        <img class="img4" src="img/shoe2.jpg" />
+      </div>
+      <h3>
+        Latest Arrivals<a href="store.html"
+          ><button class="btn3"><b>Buy Now!</b></button></a
+        >
+      </h3>
+    </section>
+
+    <section class="footer">
+      <div class="about">
+        <ul>
+          <h3>ABOUT</h3>
+          <li>About Us</li>
+          <li>Careers</li>
+          <li>Awards & recognization</li>
+          <li>Financial Info</li>
+        </ul>
+      </div>
+      <div class="info">
+        <ul>
+          <h3>INFORMATION</h3>
+          <li>Payment Options</li>
+          <li>TERMS & CONDITIONS</li>
+          <li>Privacy Policy</li>
+          <li>Coverage areas</li>
+        </ul>
+      </div>
+      <div class="serv">
+        <ul>
+          <h3>CUSTOMER SERVICES</h3>
+          <li>FAQs</li>
+          <li>MyGIOIA</li>
+          <li>Store Locator</li>
+          <li>Contact Info</li>
+        </ul>
+      </div>
+      <div class="social">
+        <h3>STAY CONNECTED</h3>
+        <a class="fb" href="https://www.facebook.com">
+          <img src="img/facebook.svg"
+        /></a>
+        <a class="insta" href="https://www.instagram.com">
+          <img src="img/instagram.svg"
+        /></a>
+        <a class="utube" href="https://www.youtube.com">
+          <img src="img/youtube.svg"
+        /></a>
+      </div>
+      <div class="signup">
+        <a class="sign" href="signup.html">Sign-up</a>
+      </div>
+    </section>
+
+    <?php include 'admin/admin.php';?>
+  </body>
+</html>
