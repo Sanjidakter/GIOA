@@ -1,0 +1,23 @@
+h1{
+   margin-left: 40%;
+   opacity: .7;
+}
+.footer {
+    height: 80vh;
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+  }
+  .footer h3 {
+    font-family: "Times New Roman", Times, serif;
+  }
+  footer ul,
+  li {
+    margin: 10%;
+  }
+  
+  footer li {
+    color: rgba(255, 255, 255, 0.719);
+    font-size: 15px;
+  }

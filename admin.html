@@ -1,0 +1,39 @@
+<?php
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbname="C181222";
+
+// Create connection
+$conn = new mysqli($servername, $username, $password);
+// Check connection
+if ($conn->connect_error) {
+  die("Connection failed: " . $conn->connect_error);
+}
+
+// Create database
+$sql = "CREATE DATABASE C181222";
+if ($conn->query($sql) === TRUE) {
+  echo "Database created successfully";
+} else {
+  echo "Error creating database: " . $conn->error;
+}
+
+$conn->close();
+
+//sql create table
+$sql="CREATE TABLE signup(
+cus_id int(40) AUTO_INCREMENT PRIMARY KEY,
+email varchar(50) NOT NULL UNIQUE ,
+mobile int(11) NOT NULL,
+password varchar(50) NOT NULL,
+address varchar(100) NOT NULL
+)";
+if ($conn->query($sql) === TRUE) {
+echo "Table created successfully";
+} else {
+echo "Error creating table: " . $conn->error;
+}
+
+$conn->close();
+?>
