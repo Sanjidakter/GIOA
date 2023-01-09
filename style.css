@@ -12,7 +12,7 @@ body {
   align-items: center;
   justify-content: space-between;
   background: none;
-  margin:none
+  margin:0;
 }
 
 .navlist li {
