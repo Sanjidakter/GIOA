@@ -39,6 +39,7 @@ body {
   color: white;
   font-size: 25px;
   text-decoration: none;
+  margin-left:20px;
 }
 .home:hover {
   border: 1px solid wheat;
